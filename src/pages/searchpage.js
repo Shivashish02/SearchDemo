@@ -2,6 +2,17 @@ import background from "../imgs/background.jpg";
 import Latesttrends from '../components/latesttrends';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { faker } from '@faker-js/faker';
+
+let card2 = []
+for (let i = 0; i <= 4; i++) {
+    card2 = [...card2, {
+        index: i,
+        img: faker.image.fashion(480, 600, true),
+        product: faker.commerce.productName(),
+    }]
+}
+
 export default function Searchpage() {
     const [toggle, setToggle] = useState(false);
     let navigate = useNavigate();
@@ -25,7 +36,7 @@ export default function Searchpage() {
             <div className='searchbox'>
                 <input className="input" type="text" placeholder="Search" onClick={() => { setToggle(true) }} onKeyPress={handleKeyPress} />
             </div>
-            {toggle && <Latesttrends />}
+            {toggle && <Latesttrends card={card2}/>}
         </div>
     );
 }

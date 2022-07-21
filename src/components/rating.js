@@ -6,7 +6,7 @@ export default function Rating(props) {
     for (let j = parseInt(props.num, 10) + 1; j <= 5; j++) {
         arr.push(<span class="fa fa-star"></span>)
     }
-    return (<div className="boxes">
+    return (<div>
         {arr}
     </div>)
 }

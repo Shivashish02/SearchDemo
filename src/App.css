@@ -5,7 +5,7 @@ body {
 .input {
     height: 6vh;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-left: 3vh;
     font-family: cursive;
     box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.78);
@@ -30,6 +30,12 @@ body {
     margin-right: 1%;
 }
 
+.cardlarge {
+    width: 20%;
+    margin: 1%;
+    margin-bottom: 2%;
+}
+
 .container {
     font-size: small;
 }
@@ -38,6 +44,13 @@ body {
     width: 100%;
     border-radius: 15%;
     background-size: 'cover'
+}
+
+#imglarge {
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-size: 'cover';
 }
 
 #flexcol {
@@ -67,7 +80,6 @@ body {
 }
 
 .results {
-    background-color: blueviolet;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -106,7 +118,12 @@ body {
 
 .right {
     width: 85%;
-    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
 }
 
 hr {
@@ -115,12 +132,11 @@ hr {
 }
 
 .ml {
-    margin-left: 2vw;
+    margin: 3vw;
 }
 
 .boxes {
     display: flex;
-    background-color: blueviolet;
     margin: 0.5vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
@@ -128,4 +144,29 @@ hr {
 
 .checked {
     color: orange;
+}
+
+#prod {
+    font-size: large;
+    font-weight: 700;
+}
+
+.prod {
+    font-size: large;
+    font-weight: 700;
+    margin: 0 2%;
+
+}
+
+.sale {
+    display: flex;
+
+}
+
+#mleft {
+    margin-left: 0.6vw;
+}
+
+.imagecontainer{
+    position: relative;
 }

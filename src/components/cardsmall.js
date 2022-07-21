@@ -1,17 +1,9 @@
-import { useState,useEffect } from "react";
-import { faker } from '@faker-js/faker';
-export default function Cardsmall() {
-    const [image, setImage] = useState(false);
-    const [product, setProduct] = useState(false);
-    useEffect(() => {
-        setImage(faker.image.fashion(480, 600, true))
-        setProduct(faker.commerce.productName())
-     }, []);
+export default function Cardsmall(props) {
     return (
         <div className="card">
-            <img id="imgsmall" src={image} />
+            <img id="imgsmall" src={props.image} />
             <div className="container">
-                <p>{product}</p>
+                <p>{props.product}</p>
             </div>
         </div>
     );
