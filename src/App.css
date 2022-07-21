@@ -1,12 +1,66 @@
-input{
-    height: 8vh;
+body{
+    font-family: sans-serif;
+}
+input {
+    height: 6vh;
     width: 100%;
     border-radius: 25px;
-    padding:3vh;
+    padding-left: 3vh;
     font-family: cursive;
-    box-shadow: 10px 10px 20px 4px rgba(0,0,0,0.62);
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.78);
 }
 
-.searchbox{
-    margin-top: 20vh;  
+.searchbox {
+    margin-top: 15vh;
+    width: 35%;
+}
+
+.latesttrends {
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.78);
+    width: 50%;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card {
+    width: 15%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container {
+    font-size: small;
+}
+
+#imgsmall {
+    width: 100%;
+    border-radius: 15%;
+    background-size: 'cover'
+}
+
+#flexcol {
+    display: flex;
+    justify-content: space-around;
+}
+
+#trends {
+    padding: 2%;
+    padding-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#topb0 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 4%;
+}
+
+#small {
+    font-size: medium;
+    padding-left: 4%;
+    margin: 1%;
+    line-height: 2;
+    font-weight: 500;
 }
