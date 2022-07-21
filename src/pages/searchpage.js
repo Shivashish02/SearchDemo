@@ -23,7 +23,7 @@ export default function Searchpage() {
     return (
         <div className="searchpage" style={myStyle} >
             <div className='searchbox'>
-                <input type="text" placeholder="Search" onClick={() => { setToggle(true) }} onKeyPress={handleKeyPress} />
+                <input className="input" type="text" placeholder="Search" onClick={() => { setToggle(true) }} onKeyPress={handleKeyPress} />
             </div>
             {toggle && <Latesttrends />}
         </div>

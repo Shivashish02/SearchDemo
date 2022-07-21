@@ -1,7 +1,8 @@
-body{
+body {
     font-family: sans-serif;
 }
-input {
+
+.input {
     height: 6vh;
     width: 100%;
     border-radius: 25px;
@@ -63,4 +64,68 @@ input {
     margin: 1%;
     line-height: 2;
     font-weight: 500;
+}
+
+.results {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchboxresult {
+    margin-top: 4vh;
+    width: 35%;
+}
+
+.collapsible {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 0.5vw;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+
+.show {
+    display: flex;
+}
+
+.left {
+    width: 15%;
+}
+
+.right {
+    width: 85%;
+    background-color: blueviolet;
+}
+
+hr {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.ml {
+    margin-left: 2vw;
+}
+
+.boxes {
+    display: flex;
+    background-color: blueviolet;
+    margin: 0.5vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.checked {
+    color: orange;
 }
