@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Rating from "./rating";
-import { useRef } from 'react';
 
 let obj = {
     brands: [],
@@ -11,9 +10,6 @@ export default function Leftaside(props) {
     const [toggle1, setToggle1] = useState({ display: "none", sign: "+" });
     const [toggle2, setToggle2] = useState({ display: "none", sign: "+" });
     const [toggle3, setToggle3] = useState({ display: "none", sign: "+" });
-    // let brands = { "Mango": 1, "H&M": 1 };
-    // const [price, setPrice] = useState({ display: "none", sign: "+" });
-    // const [ratings, setRatings] = useState({ display: "none", sign: "+" });
     const toggler1 = () => {
         if (toggle1.display === "none") {
             setToggle1({ display: "inline", sign: "-" })

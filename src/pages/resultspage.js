@@ -59,7 +59,6 @@ export default function Resultpage() {
             return (true1 && true2 && true3)
         })
     }
-    // const [card, setCard] = useState(card3);
     return (
         <div>
             <div className="results" >
