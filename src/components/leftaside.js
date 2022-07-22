@@ -33,54 +33,54 @@ export default function Leftaside() {
 
 
     return (<div className="left">
-        <button type="button" class="collapsible" onClick={toggler1}>Brands<div>{toggle1.sign}</div></button>
-        <div class="content" style={toggle1} >
+        <button type="button" className="collapsible" onClick={toggler1}>Brands<div>{toggle1.sign}</div></button>
+        <div className="content" style={toggle1} >
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <label for="vehicle1">Mango</label><br />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <label for="vehicle1">H&M</label><br />
             </div>
         </div>
         <hr />
-        <button type="button" class="collapsible" onClick={toggler2}>Price Range<div>{toggle2.sign}</div></button>
-        <div class="content" style={toggle2} >
+        <button type="button" className="collapsible" onClick={toggler2}>Price Range<div>{toggle2.sign}</div></button>
+        <div className="content" style={toggle2} >
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <label for="vehicle1">Under 500</label><br />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <label for="vehicle1">500 to 2000</label><br />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <label for="vehicle1">2000 to 5000</label><br />
             </div>
         </div>
         <hr />
-        <button type="button" class="collapsible" onClick={toggler3}>Ratings<div>{toggle3.sign}</div></button>
-        <div class="content" style={toggle3} >
+        <button type="button" className="collapsible" onClick={toggler3}>Ratings<div>{toggle3.sign}</div></button>
+        <div className="content" style={toggle3} >
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <Rating num="5" />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <Rating num="4" />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <Rating num="3" />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <Rating num="2" />
             </div>
             <div className="boxes">
-                <input type="checkbox" class="vehicle" />
+                <input type="checkbox" />
                 <Rating num="1" />
             </div>
         </div>

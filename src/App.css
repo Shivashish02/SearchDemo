@@ -200,3 +200,7 @@ hr {
     padding-top: 6%;
     color: white;
 }
+
+.shared-class {
+    color: red;
+}
