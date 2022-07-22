@@ -26,6 +26,9 @@ export default function Searchpage() {
         flexDirection: "column",
         alignItems: "center",
     };
+    if (toggle) {
+        myStyle.height = ""
+    }
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
             navigate("/result");
@@ -36,7 +39,7 @@ export default function Searchpage() {
             <div className='searchbox'>
                 <input className="input" type="text" placeholder="Search" onClick={() => { setToggle(true) }} onKeyPress={handleKeyPress} />
             </div>
-            {toggle && <Latesttrends card={card2}/>}
+            {toggle && <Latesttrends card={card2} />}
         </div>
     );
 }
