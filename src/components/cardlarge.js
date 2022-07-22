@@ -16,7 +16,7 @@ export default function Cardlarge(props) {
     return (
         <div className="cardlarge" onMouseEnter={() => setDisplay({ display: "block" })}
             onMouseLeave={() => setDisplay({ display: "none" })}>
-            <div className="imagecontainer">
+            <div className="imagecontainer">   
                 <img id="imglarge" src={props.image} />
                 <div id="icon" onClick={clickhandler}><IconContext.Provider value={{ className: "shared-class", size: 25 }}>
                     {!like && <BsHeart />}

@@ -40,7 +40,8 @@ body {
 .cardlarge {
     width: 20%;
     margin: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    margin-top: 0%;
 }
 
 .container {
@@ -55,8 +56,8 @@ body {
 
 #imglarge {
     width: 100%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     background-size: 'cover';
 }
 
@@ -111,6 +112,7 @@ body {
     width: 100%;
     border: none;
     text-align: left;
+    align-items: center;
     outline: none;
     font-size: 18px;
     font-weight: 600;
@@ -127,6 +129,7 @@ body {
 
 .left {
     width: 15%;
+    margin-top: 0%;
 }
 
 .right {
@@ -134,9 +137,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 hr {
@@ -145,7 +146,8 @@ hr {
 }
 
 .ml {
-    margin: 3vw;
+    margin: 4vh;
+    margin-top: 8vh;
 }
 
 .boxes {
@@ -186,9 +188,8 @@ hr {
 
 #icon {
     position: absolute;
-    width: 10%;
     top: 5%;
-    right: 8%;
+    right: 6%;
 }
 
 #viewprod {
@@ -214,6 +215,10 @@ hr {
     color: white;
 }
 
+.shared-class {
+    color: red;
+    size: 50;
+}
 
 @media only screen and (max-width: 1200px) {
     .latesttrends {
@@ -222,6 +227,15 @@ hr {
 }
 
 @media only screen and (max-width: 900px) {
+    .cardlarge {
+        width: 28%;
+        margin-bottom: 4%;
+    }
+
+    .searchboxresult {
+        width: 50%;
+    }
+
     .searchbox {
         width: 50%;
     }
@@ -243,7 +257,33 @@ hr {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 700px) {
+    .left {
+        width: 25%;
+    }
+
+    .cardlarge {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .left {
+        width: 30%;
+    }
+
+    .cardlarge {
+        width: 60%;
+        margin-bottom: 7%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .searchboxresult {
+        width: 60%;
+    }
+
     .searchbox {
         width: 60%;
     }
