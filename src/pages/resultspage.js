@@ -5,7 +5,8 @@ import Rightaside from "../components/rightaside";
 import { faker } from '@faker-js/faker';
 
 let num
-let card2 = []
+let arr2 = ["Mango", "Mango", "H&M", "Mango", "Mango", "H&M", "Mango", "H&M"]
+let card2 = [], card3 = []
 for (let i = 0; i <= 7; i++) {
     num = Math.floor(Math.random() * 2000)
     card2 = [...card2, {
@@ -15,18 +16,50 @@ for (let i = 0; i <= 7; i++) {
         saleprice: num,
         ogprice: Math.floor(num + (Math.random() * 1000)),
         star: Math.floor(1 + (Math.random() * 5)),
-        ratings: Math.floor((Math.random() * 100))
+        ratings: Math.floor((Math.random() * 100)),
+        brand: arr2[i]
     }]
 }
+
+
 export default function Resultpage() {
     let navigate = useNavigate();
-    const [card, setCard] = useState(card2);
+    const [Filters, setFilters] = useState({
+        brands: [],
+        price: [],
+        ratings: []
+    })
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
             navigate("/result");
         }
     }
-
+    if (Filters.brands.length && Filters.price.length && Filters.ratings.length) { card3 = [...card2] }
+    else {
+        card3 = card2.filter(entry => {
+            let true1 = true, true2 = true, true3 = true
+            if (Filters.brands.length) {
+                if (Filters.brands.indexOf(entry.brand) === -1) {
+                    true1 = false
+                }
+            }
+            if (Filters.ratings.length) {
+                if (Filters.ratings.indexOf(entry.star) === -1) {
+                    true2 = false
+                }
+            }
+            if ((Filters.price.length) && (Filters.price.length !== 2)) {
+                if ((Filters.price.indexOf(1) !== -1) && (entry.saleprice > 1000)) {
+                    true3 = false
+                }
+                if ((Filters.price.indexOf(2) !== -1) && (entry.saleprice < 1000)) {
+                    true3 = false
+                }
+            }
+            return (true1 && true2 && true3)
+        })
+    }
+    // const [card, setCard] = useState(card3);
     return (
         <div>
             <div className="results" >
@@ -36,8 +69,8 @@ export default function Resultpage() {
             </div>
             <h1 className="ml">Search Results</h1>
             <div className="show">
-                <Leftaside />
-                <Rightaside card={card} />
+                <Leftaside handleFilters={filters => setFilters(filters)} />
+                <Rightaside card={card3} />
             </div>
         </div>
     );

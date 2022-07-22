@@ -1,5 +1,4 @@
 import Rating from "./rating";
-import heart from "../imgs/heart.png";
 import { useState } from "react";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
