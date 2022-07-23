@@ -8,7 +8,7 @@ let card2 = []
 for (let i = 0; i <= 4; i++) {
     card2 = [...card2, {
         index: i,
-        img: faker.image.fashion(480, 600, true),
+        img: faker.image.abstract(480, 600, true),
         product: faker.commerce.productName(),
     }]
 }

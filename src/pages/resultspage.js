@@ -11,7 +11,7 @@ for (let i = 0; i <= 7; i++) {
     num = Math.floor(Math.random() * 2000)
     card2 = [...card2, {
         index: i,
-        img: faker.image.fashion(480, 600, true),
+        img: faker.image.abstract(480, 600, true),
         product: faker.commerce.productName(),
         saleprice: num,
         ogprice: Math.floor(num + (Math.random() * 1000)),
