@@ -274,12 +274,21 @@ hr {
     }
 
     .cardlarge {
-        width: 60%;
-        margin-bottom: 7%;
+        width: 80%;
+        margin-bottom: 8%;
     }
 }
 
 @media only screen and (max-width: 430px) {
+    .left {
+        width: 35%;
+    }
+
+    .cardlarge {
+        width: 85%;
+        margin-bottom: 8%;
+    }
+
     .searchboxresult {
         width: 60%;
     }
